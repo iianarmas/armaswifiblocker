@@ -1,0 +1,15 @@
+[Unit]
+Description=Armas WiFi Control API Server
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/armas-wifi/backend
+ExecStart=/opt/armas-wifi/backend/venv/bin/python run.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
