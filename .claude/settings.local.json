@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -NoProfile -Command \"Get-ChildItem -Path ''c:\\\\Users\\\\iian\\\\Documents\\\\JavaScript\\\\projects\\\\armas-wifi'' -Force | Format-List Name, FullName\")",
+      "Bash(powershell:*)"
+    ]
+  }
+}
